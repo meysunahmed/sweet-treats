@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Place an Order - Sweet Treats Bakery</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="menu.html">Menu</a> | 
+            <a href="order.html">Order</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Place Your Order</h1>
+        <form>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="customer_name" required>
+            </p>
+            
+            <p>
+                <label for="dessert">Dessert Choice:</label>
+                <select id="dessert" name="dessert_choice">
+                    <option value="donuts">Sprinkles Donuts</option>
+                    <option value="milkshake">Chocolate Milkshake Parfait</option>
+                    <option value="cookie">Chocolate Chip Cookies</option>
+                    <option value="tart">Berry Cheesecake Tart</option>
+                    <option value="cake">Chocolate Cake</option>
+                    <option value="cupcake">Mint Cupcakes</option>
+                </select>
+            </p>
+            
+            <p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </p>
+            
+            <p>
+                <label for="date">Delivery Date:</label>
+                <input type="date" id="date" name="delivery_date" required>
+            </p>
+            
+            <p>
+                <input type="submit" value="Place Order">
+            </p>
+        </form>
+
+        <hr>
+
+        <h2>Our Dessert Menu Gallery</h2>
+        <p>Take a look at what we have baking today:</p>
+        
+        <div>
+            <img src="images/donuts.jpg" alt="Donuts" width="150">
+            <img src="images/milkshake.jpg" alt="Milkshake" width="150">
+            <img src="images/cookie.jpg" alt="Cookies" width="150">
+            <br>
+            <img src="images/tart.jpg" alt="Tart" width="150">
+            <img src="images/cake.jpg" alt="Cake" width="150">
+            <img src="images/cupcake.jpg" alt="Cupcakes" width="150">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sweet Treats Bakery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
